@@ -1,0 +1,12 @@
+
+# vim-plug folders
+colors
+autoload
+plugged
+
+# Random files
+50.plugmaps.vim
+
+# Git stuff
+readme.html
+
