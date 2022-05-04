@@ -60,7 +60,7 @@ map <C-p> "+P
 autocmd BufWritePre * %s/\s\+$//e
 
 " Automaticaly compile the markdown file in html
-autocmd BufWritePost *.md !cmark-gfm -t html --github-pre-lang % > %:r.html
+autocmd BufWritePost *.md silent !cmark-gfm -t html --github-pre-lang % > %:r.html
 
 " Can't because interactive mode
 " autocmd BufWritePost *.tex !aspell -t -c %
@@ -81,6 +81,4 @@ map <C-N> :NERDTreeToggle<CR>
 
 " ervandew/supertab
 " let g:SuperTabDefaultCompletionType="<c-n>"
-"------------------------------------------------------------
-
 

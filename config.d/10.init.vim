@@ -2,7 +2,7 @@
 " have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
 
-" set hidden
+set hidden
 set clipboard=unnamedplus
 set encoding=utf-8
 
@@ -19,6 +19,9 @@ set hlsearch
 " Use case insensitive search, except when using capital letters
 set ignorecase
 set smartcase
+
+" Update screen faster
+set updatetime=300
 
 " Split to the right to the bottom
 set splitright
@@ -68,7 +71,7 @@ syntax on
 " Highlight the line if in insert mode
 autocmd InsertEnter,InsertLeave * set cul!
 
-set notimeout ttimeout ttimeoutlen=200
+set notimeout ttimeout ttimeoutlen=100
 " Avoiding error
 
 " Line numbers
@@ -83,15 +86,15 @@ set modelines=5
 set t_Co=256
 set background=dark
 
+" Tabs are 2 spaces
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 "
 set list
-
 set listchars=tab:▸\ ,trail:-,precedes:←,extends:→
 
-" Highlight column 110 !
-set colorcolumn=110
+" Highlight column 100 !
+set colorcolumn=100
 highlight ColorColumn ctermbg=darkgray
 highlight Comment cterm=italic
 
@@ -112,7 +115,7 @@ set guicursor=n-v-c:block,
 
 
 if (has("termguicolors"))
-        set termguicolors
+  set termguicolors
 endif
 
 " Disables automaticcommenting on newline

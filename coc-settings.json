@@ -1,0 +1,20 @@
+{
+  "eslint.run": "onSave",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "rust",
+    "json",
+    "markdown",
+    "yaml"
+  ],
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "rust-analyzer.diagnostics.enable": true,
+  "rust-analyzer.updates.prompt": false,
+  "coc.preferences.extensionUpdateCheck": "never",
+  "coc.preferences.useQuickfixForLocations": true,
+  "list.source.grep.useLiteral": false,
+  "rust-analyzer.diagnostics.disabled": [
+    "missing-unsafe"
+  ],
+  "languageserver": {
+  }
+}
