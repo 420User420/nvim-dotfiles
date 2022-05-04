@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir -p ~/.config/nvim/colors
+# Creating the needed directories
 mkdir -p ~/.config/nvim/config.d
 mkdir -p ~/.config/nvim/templates
 
@@ -20,9 +20,5 @@ ln -sf $(pwd)/coc-settings.json ~/.config/nvim/coc-settings.json
 ln -sf $(pwd)/templates/header.c.cpp ~/.config/nvim/templates/header.c.cpp
 ln -sf $(pwd)/templates/source.c.cpp ~/.config/nvim/templates/source.c.cpp
 ln -sf $(pwd)/templates/source.py ~/.config/nvim/templates/header.py
-
-
-# Colorscheme
-ln -sf $(pwd)/colors/gruvbox.vim ~/.config/nvim/colors/gruvbox.vim
 
 env SETUP_420=1 nvim

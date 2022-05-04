@@ -1,6 +1,7 @@
 
 # Installation
 
-* mkdir plugged
+* git clone
 * Install vim-plug
-* Done.
+* Execute `sh setup.sh`
+* Run `PlugInstall` within neovim

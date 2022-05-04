@@ -39,6 +39,8 @@ Plug 'tpope/vim-commentary'
 " ----------------------------------
 "            APPEARENCE
 " ----------------------------------
+" Gruvbox theme
+Plug 'morhetz/gruvbox'
 " Icons in NERDTree
 Plug 'ryanoasis/vim-devicons'
 "Highlight yanked text
