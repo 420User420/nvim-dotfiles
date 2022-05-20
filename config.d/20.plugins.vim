@@ -46,9 +46,9 @@ Plug 'ryanoasis/vim-devicons'
 "Highlight yanked text
 Plug 'machakann/vim-highlightedyank'
 " Bottom status bar
-Plug 'itchyny/lightline.vim'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
+" Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 " Makes the text vely butiful
 Plug 'junegunn/goyo.vim'
 

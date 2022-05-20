@@ -51,27 +51,27 @@ let g:indentLine_first_char = '┃'
 let g:indentLine_showFirstIndentLevel = 1
 let g:indentLine_fileTypeExclude = [ 'startify' ]
 
-" airline
-" let g:airline_theme='wombat'
+" Airline bottom status line
+let g:airline_theme='wombat'
 " let g:airline_powerline_fonts=1
 " let g:airline#extensions#tabline#enabled=1
 " let g:airline#extensions#tabline#formatter='unique_tail'
 
 " Lightline
-let g:lightline = {
-      \ 'colorscheme': 'seoul256',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'filename': 'LightlineFilename',
-      \   'cocstatus': 'coc#status'
-      \ },
-      \ }
-function! LightlineFilename()
-  return expand('%:t') !=# '' ? @% : '[No Name]'
-endfunction
+" let g:lightline = {
+      " \ 'colorscheme': 'gruvbox',
+      " \ 'active': {
+      " \   'left': [ [ 'mode', 'paste' ],
+      " \             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
+      " \ },
+      " \ 'component_function': {
+      " \   'filename': 'LightlineFilename',
+      " \   'cocstatus': 'coc#status'
+      " \ },
+      " \ }
+" function! LightlineFilename()
+  " return expand('%:t') !=# '' ? @% : '[No Name]'
+" endfunction
 
 " Use auocmd to force lightline update.
 autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
