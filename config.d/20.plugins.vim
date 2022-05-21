@@ -35,6 +35,8 @@ Plug 'jreybert/vimagit'
 Plug 'vimwiki/vimwiki'
 " Comment block at once
 Plug 'tpope/vim-commentary'
+" Disable search highlight once done searching
+Plug 'junegunn/vim-slash'
 
 " ----------------------------------
 "            APPEARENCE

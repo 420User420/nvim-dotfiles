@@ -10,7 +10,8 @@ map ; :FZF<CR>
 
 " Map <C-O> (redraw screen) to also turn off search highlighting until the
 " next search
-nnoremap <C-I> :nohl<CR>
+" map <C-O> :nohlsearch<return>
+map <esc> :noh <CR>
 
 " For ctrl + {h, j, k, l}  instead of ctrl + w then ctrl + {h, j, k, l}
 nnoremap <C-J> <C-W><C-J>
@@ -35,6 +36,7 @@ map <C-s> :wa<CR>
 
 " Annoyingly good
 command W wa
+command Wa wa
 command WQ wq
 command Wq wq
 command Q q
